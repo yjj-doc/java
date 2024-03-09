@@ -1,25 +1,28 @@
 # Java  
 : 응용 프로그램 개발을 위한 프로그래밍 언어와 개발 도구 및 실행 환경  
 
-- [Java Platform](./java-platform.md)
-  - JRE 
-  - JDK 
-- [Java Programming Language](./java-lang/)
-- Java API
+- [Java Platform](#java-platform)
+  - [JDK](./jdk.md)
+    - [JVM](./jvm.md)
+  - [Java Programming Language](./java-lang/)
   - [Java SE](./java-api-se/)
   - [Java EE](./java-api-ee/)
-- Java Projects
 - [Java Pattern](./java-pattern/)
-- [Java Framework](./java-framework/)
 - [Java Library](./java-lib/)
+- [Java Framework](./java-framework/)
 - [Java Tool](./java-tool/)
 
 
-일반 가전 제품이나 휴대용 기기 간의 커뮤니케이션을 가능하게 해주는 기술 고려 => 컨버전스, 네트워크, 분산, 보안  
-당시 기술로는 파워나 메모리가 부족하여 이를 보완 => byte data type, user cannot manipulate pointers, garbage collection  
-제품마다 다른 CPU가 존재해 특정 CPU에 종속하지 않기 위해 가상 컴퓨터 개념 도입 => bytecode, JVM, JRE
 
-https://www.tech-insider.org/java/research/1995/07.html  
+## Java Platform
+: 자바 프로그램을 개발하고 실행하기 위한 표준 플랫폼   
+
+플랫폼 | 특징 | 패키지
+---|---|---
+Java SE (Standard Edition)   | 기본 핵심 기능 | JDK
+Java EE (Enterprise Edition) | 엔터프라이즈 애플리케이션 | Java EE SDK
+Java ME (Mobile Edition)     | 임베디드, 모바일, IoT | Java ME SDK
+Java Embedded                | Java ME Embedded + Java SE Embedded | Java Embedded Suite
 
 
 
@@ -27,10 +30,14 @@ https://www.tech-insider.org/java/research/1995/07.html
 Java Community Process  
 : 자바 관리 조직   
 : 자바 플랫폼 버전 및 기술 사양을 제안/검토/승인하는 커뮤니티    
-: Java EE 경우 소유권이 Eclipse Foundation으로 넘어가면서 Jakarta EE으로 이름이 변경되고 기술 사양은 Jakarta EE Working Group에서 검토 
+: Java EE 경우 소유권이 Eclipse Foundation으로 넘어가면서 Jakarta EE으로 이름이 변경되고 기술 사양은 Jakarta EE Working Group에서 검토  
 
 - JSR 
 - JEP 
+
+**EFSP**  
+: Eclipse Foundation 사양 프로세스  
+: Jakarta EE를 위한 사양 프로세스  
 
 
 
@@ -39,7 +46,7 @@ Java Specification Requests
 : 자바 스펙 요구서  
 : 자바 플랫폼에 추가된 사양 및 기술에 대한 공식 문서  
 
-**Java JSR list**  
+**JSR list**  
 https://www.jcp.org/en/jsr/all
 
 
@@ -61,6 +68,5 @@ JDK Enhancement Proposal
 : JDK 향상 제안  
 : 기존 기능 개선이나 새로운 기능 제안  
 
-
-
-[top](#)
+**JEP list**  
+https://openjdk.org/jeps/0
