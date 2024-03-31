@@ -1,6 +1,7 @@
 # Java  
 : 응용 프로그램 개발을 위한 프로그래밍 언어와 개발 도구 및 실행 환경  
 
+- [Java Program Execution](./java-execution.md)
 - [Java Platform](#java-platform)
   - [JDK](./jdk.md)
     - [JVM](./jvm.md)
@@ -11,6 +12,14 @@
 - [Java Library](./java-lib/)
 - [Java Framework](./java-framework/)
 - [Java Tool](./java-tool/)
+
+
+**Java History**  
+- 1991년 Green 팀에서 기기간 커뮤니케이션을 가능하게 해주는 기술 고려 (컨버전스, 네트워크, 분산, 보안) 
+- 당시에는 제품마다 다른 CPU가 존재해 특정 CPU에 종속하지 않기 위해 가상 컴퓨터 개념 도입 (JVM, JRE)
+- 이를 위해 C++를 확장하려 했으나 메모리 문제로 Oak라는 프로그래밍 언어를 만듬 (GC, 객체지향)
+- 기술을 시연했으나 거래가 무산되며 초점을 웹에 맞춰 웹에 적합하게 구현한 java 언어와 브라우저를 만듬
+- 1998년 다른 회사와 조직이 java 개발과 표준화에 참여할 수 있도록 JCP를 설립
 
 
 
@@ -30,10 +39,7 @@ Java Embedded                | Java ME Embedded + Java SE Embedded | Java Embedd
 Java Community Process  
 : 자바 관리 조직   
 : 자바 플랫폼 버전 및 기술 사양을 제안/검토/승인하는 커뮤니티    
-: Java EE 경우 소유권이 Eclipse Foundation으로 넘어가면서 Jakarta EE으로 이름이 변경되고 기술 사양은 Jakarta EE Working Group에서 검토  
-
-- JSR 
-- JEP 
+: Java EE 경우 소유권이 Eclipse Foundation으로 넘어가면서 Jakarta EE로 이름이 변경되고 기술 사양은 Jakarta EE Working Group에서 검토  
 
 **EFSP**  
 : Eclipse Foundation 사양 프로세스  
