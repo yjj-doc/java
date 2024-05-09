@@ -18,7 +18,7 @@ public class NoClassDefFoundErrorTest {
 			
 		} catch (NoClassDefFoundError e){
 			e.printStackTrace();
-        }
+		}
 	} 
 	
 }

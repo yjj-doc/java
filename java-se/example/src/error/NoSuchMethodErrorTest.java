@@ -18,7 +18,7 @@ public class NoSuchMethodErrorTest {
 
 		} catch (NoSuchMethodError e){
 			e.printStackTrace();
-        }
+		}
 	} 
 	
 	private void method(String str) {

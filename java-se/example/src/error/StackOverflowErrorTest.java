@@ -15,9 +15,9 @@ public class StackOverflowErrorTest {
 
 			this.method(1);
 
-		} catch ( OutOfMemoryError | StackOverflowError e){
+		} catch (StackOverflowError e){
 			e.printStackTrace();
-        }
+		}
 	} 
 	
 	private void method(int i) {
