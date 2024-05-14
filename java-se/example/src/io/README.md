@@ -44,7 +44,7 @@ Stream | InputStream | OutputStream
 1차 스트림 | StringBufferInputStream	| -
 2차 스트림 | ObjectInputStream			| ObjectputStream 
 
-**보조스트림**  
+**바이트 보조스트림**  
 = 필터 스트림  
 : 스트림과 연결되어 여러 보조 기능을 하는 클래스
 
@@ -73,7 +73,7 @@ Stream | Reader | Writer
 2차 스트림 | -							| PrintWriter
 1차 스트림 | StringReader			| StringWriter  
 
-**보조스트림**
+**문자 보조스트림**
 Stream | Reader | Writer
 ---|---|---
 2차 스트림 | FilterReader			| FilterWriter
