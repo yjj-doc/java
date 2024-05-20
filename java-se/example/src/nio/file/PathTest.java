@@ -1,6 +1,8 @@
 package nio.file;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -16,7 +18,13 @@ public class PathTest {
 		
 		try {
 			
-			Path p = Paths.get("C:", "Users", "yjj", "temp");
+			// 주어진 문자열 경로를 Path 객체로 반환 
+			Path.of("C:", "Users", "yjj", "temp");
+			
+			// 주어진 URI 객체를 Path 객체로 반환
+			Path.of(new URI("C:\\Users\\yjj\\temp"));
+			
+			Path p = Path.of("C:", "Users", "yjj", "temp");
 			
 			// 절대 경로인지 여부 반환
 			p.isAbsolute();
@@ -59,6 +67,9 @@ public class PathTest {
 			p.iterator();
 			
 		} catch (IOException e) {
+			e.printStackTrace();
+			
+		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}
 
