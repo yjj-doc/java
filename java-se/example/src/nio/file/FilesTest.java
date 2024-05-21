@@ -60,6 +60,12 @@ public class FilesTest {
 			// 주어진 파일을 BufferedWriter 객체로 반환
 			Files.newBufferedWriter(p);
 			
+			// 주어진 파일을 Stream 객체로 반환
+			Files.lines(p);
+			
+			// 주어진 파일을 List 객체로 반환
+			Files.readAllLines(p);
+			
 			// 주어진 디렉토리 생성
 			Files.createDirectory(p);
 			
